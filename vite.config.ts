@@ -7,6 +7,7 @@ import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
+import VueTypeImports from 'vite-plugin-vue-type-imports'
 
 export default defineConfig({
   resolve: {
@@ -41,6 +42,7 @@ export default defineConfig({
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
     Unocss(),
+    VueTypeImports(),
   ],
 
   // https://github.com/vitest-dev/vitest
